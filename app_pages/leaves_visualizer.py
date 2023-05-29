@@ -1,42 +1,48 @@
+
+"""
+The leaves_visualizer_body function displays the leaves visualizer page of a Streamlit application. It provides options for visual representation, 
+differences between average powdery mildew and healthy leaves, and an image gallery. It uses checkboxes and buttons to control the display of images 
+and allows the selection of a specific label for the image gallery. When the "Create Gallery" button is clicked, it generates a gallery of images 
+based on the selected label.
+"""
+
 import streamlit as st
 import os
-import pandas as pd
-import numpy as np
-import seaborn as sns
 import matplotlib.pyplot as plt
-from matplotlib.image import imread
-
-import itertools
-import random
-
-
 
 def leaves_visualizer_body():
-    st.info("The client is interested in determining whether a given leaf contains powdery mildew or not.")
-    st.write("You can download a set of healthy and powdery mildew cherry leaf images for live prediction. "
-             "Download the images from [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
+    st.info("Visualization via contrasting powdery mildew with a healthy cherry leaves.")
+    version = 'v2'
+    
+    if st.checkbox("Visual representation of average and variability:"):
+        avg_powdery_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
+        avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
+        st.warning("* The average and variability images lack discernible patterns that allow for differentiation between them \n\n* A subtle distinction can be observed in the coloration of the average images")
+        st.image(avg_powdery_mildew, caption='Powedery mildew leaf - Average and Variability')
+        st.image(avg_healthy, caption='Healthy leaf - Average and Variability')
     st.write("---")
-
-    images_buffer = st.file_uploader('Upload cherry leaf images. You may select more than one.',
-                                     type='png', accept_multiple_files=True)
-
-    if images_buffer is not None:
-        df_report = pd.DataFrame([])
-        for image in images_buffer:
-            img_pil = Image.open(image)
-            st.info(f"Cherry leaf image: **{image.name}**")
-            img_array = np.array(img_pil)
-            st.image(img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
-
-            version = 'v1'
-            resized_img = resize_input_image(img=img_pil, version=version)
-            pred_proba, pred_class = load_model_and_predict(resized_img, version=version)
-            plot_predictions_probabilities(pred_proba, pred_class)
-
-            df_report = df_report.append({"Name": image.name, 'Result': pred_class}, ignore_index=True)
-
-        if not df_report.empty:
-            st.success("Analysis Report")
-            st.table(df_report)
-            st.markdown(download_dataframe_as_csv(df_report), unsafe_allow_html=True)
-# #-------------------------------
+    #-----------------------
+    if st.checkbox("Differences between average powdery mildew and average healthy leaves:"):
+        diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
+        st.warning("* The study outcomes reveal a lack of identifiable patterns that would facilitate intuitive differentiation between the entities being studied.")
+        st.image(diff_between_avgs, caption='Visible differences in the average images.')
+    st.write("---")
+    #------------------------
+    if st.checkbox("Image Gallery:"):
+        st.write("* Click 'Create Gallery' for a new set of images")
+        my_data_dir = '/workspace/project5/inputs/datasets/cherry-leaves'
+        labels = os.listdir(my_data_dir+ '/validation')
+        label_to_display = st.selectbox(label="Select label", options=labels, index=0)
+        if st.button("Create Gallery"):
+            nrows, ncols = 8, 3
+            fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=(10,25))
+            images_list = os.listdir(os.path.join(my_data_dir, 'validation', label_to_display))
+            for ax, img_path in zip(axes.ravel(), images_list):
+                img = plt.imread(os.path.join(my_data_dir, 'validation', label_to_display, img_path))
+                img_shape = img.shape
+                ax.imshow(img)
+                ax.set_title(f"Width {img_shape[1]}px x Height {img_shape[0]}px")
+                ax.set_xticks([])
+                ax.set_yticks([])
+            plt.tight_layout()
+            st.pyplot(fig=fig)
