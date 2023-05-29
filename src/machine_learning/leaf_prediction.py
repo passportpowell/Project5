@@ -17,7 +17,7 @@ import pandas as pd
 import plotly.express as px
 from tensorflow.keras.models import load_model
 from PIL import Image
-from src.data_management import load_pickle_file
+from src.dataframe_utils import load_pickle_file
 
 
 def plot_predictions_probabilities(pred_proba, pred_class):

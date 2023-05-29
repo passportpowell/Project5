@@ -7,7 +7,7 @@ It presents the model's accuracy history through visualizations of the training 
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
-from src.machine_learning.evaluate_clf import load_evaluation_results
+from src.machine_learning.ml_evaluation import load_evaluation_results
 
 def ml_performance_body():
     version = 'v2'
