@@ -9,5 +9,3 @@ keras
 protobuf
 pandas
 pandas-profiling
-# imbalanced-learn
-# xgboost
