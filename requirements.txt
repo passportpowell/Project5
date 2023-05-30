@@ -1,3 +1,24 @@
+# numpy
+# matplotlib
+# seaborn
+# plotly
+# streamlit
+# scikit-learn
+# tensorflow-cpu
+# keras
+# protobuf
+# pandas
+# pandas-profiling
+# ppscore
+# feature-engine
+# imbalanced-learn
+# xgboost
+# yellowbrick
+# Jinja2
+# MarkupSafe
+# ipywidgets
+
+
 numpy
 matplotlib
 seaborn
@@ -9,11 +30,5 @@ keras
 protobuf
 pandas
 pandas-profiling
-ppscore
-feature-engine
 imbalanced-learn
 xgboost
-yellowbrick
-Jinja2
-MarkupSafe
-ipywidgets
