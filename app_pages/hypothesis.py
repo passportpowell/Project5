@@ -22,8 +22,4 @@ def hypothesis_body():
         "absence of the characteristic white growth. We will compare the tool's classifications with visual inspections and expert assessments to determine "
         "its accuracy in differentiating between healthy and affected leaves."
     )
-    avg_powdery_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")
-    avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
-    st.image(avg_powdery_mildew, caption='Powedery mildew leaf - Average and Variability')
-    st.image(avg_healthy, caption='Healthy leaf - Average and Variability')
     #------------------------------

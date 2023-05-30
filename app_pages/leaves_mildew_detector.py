@@ -17,7 +17,7 @@ from src.machine_learning.leaf_prediction import (load_model_and_predict, resize
 def leaves_mildew_detector_body():
     st.write("* The client is interested in telling whether a given leaf contains powdery mildew or not.")
     st.write("* If you'd like to make real-time predictions, you can obtain a series of cherry leaf images representing both healthy specimens and those with powdery mildew. You can acquire the image collection from this [location](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
-    st.write("---")
+
     images_buffer = st.file_uploader('Upload leaf images below.', type=['jpg', 'jpeg', 'png', 'gif', 'bmp', 'tiff', 'svg', 'ico', 'jfif', 'webp'], accept_multiple_files=True)
     if images_buffer:
         df_report = pd.DataFrame()
