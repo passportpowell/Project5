@@ -7,6 +7,6 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
-# inputs/datasets/cherry-leaves/test
-# inputs/datasets/cherry-leaves/train
+inputs/datasets/cherry-leaves/test
+inputs/datasets/cherry-leaves/train
 kaggle.json
