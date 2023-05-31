@@ -96,6 +96,9 @@ The model development process involves several steps, including data preprocessi
 
 - pandas-profiling: I used pandas-profiling to automatically generate detailed exploratory data analysis reports for my data.
 
+- imbalanced-learn: I utilized imbalanced-learn for handling imbalanced datasets and implementing techniques for handling class imbalance in classification problems.
+
+- xgboost: I employed xgboost, a popular gradient boosting library, for training boosted tree models and achieving better predictive performance.
 
 These libraries provided me with powerful tools and functionalities to efficiently analyze data, create visualizations, build machine learning models, and deploy interactive applications.
 ## Acknowledgements
