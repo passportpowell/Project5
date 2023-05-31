@@ -15,3 +15,4 @@ inputs/datasets/cherry-leaves
 /inputs/cherry_leaves/cherry-leaves/test/*
 /inputs/cherry_leaves/cherry-leaves/healthy
 /inputs/cherry_leaves/cherry-leaves/powdery_mildew
+jupyter_notebooks/
