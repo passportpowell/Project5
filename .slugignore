@@ -19,3 +19,5 @@ inputs/datasets/cherry-leaves/validation/powdery_mildew
 jupyter_notebooks/1Collection.ipynb
 jupyter_notebooks/2Visualisations.ipynb
 jupyter_notebooks/3Modelling.ipynb
+cherry-leaves.zip
+.devcontainer
