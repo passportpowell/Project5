@@ -14,6 +14,7 @@ import numpy as np
 from src.dataframe_utils import download_dataframe_as_csv
 from src.machine_learning.leaf_prediction import (load_model_and_predict, resize_input_image, plot_predictions_probabilities)
 
+
 def leaves_mildew_detector_body():
     st.write("* The client is interested in telling whether a given leaf contains powdery mildew or not.")
     st.write("* If you'd like to make real-time predictions, you can obtain a series of cherry leaf images representing both healthy specimens and those with powdery mildew. You can acquire the image collection from this [location](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves).")
@@ -29,7 +30,7 @@ def leaves_mildew_detector_body():
             resized_img = resize_input_image(img=img_pil, version=version)
             pred_proba, pred_class = load_model_and_predict(resized_img, version=version)
             plot_predictions_probabilities(pred_proba, pred_class)
-            df_report = df_report.append({"Name":image.name, 'Result': pred_class }, ignore_index=True)
+            # df_report = df_report.concat({"Name":image.name, 'Result': pred_class })
         if not df_report.empty:
             st.success("Analysis Report")
             st.table(df_report)

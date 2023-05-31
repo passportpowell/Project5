@@ -45,7 +45,7 @@ def leaves_visualizer_body():
                 img = plt.imread(os.path.join(my_data_dir, 'validation', label_to_display, img_path))
                 img_shape = img.shape
                 ax.imshow(img)
-                ax.set_title(f"Width {img_shape[1]}px x Height {img_shape[0]}px")
+                # ax.set_title(f"Width {img_shape[1]}px x Height {img_shape[0]}px")
                 ax.set_xticks([])
                 ax.set_yticks([])
 
