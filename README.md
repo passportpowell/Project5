@@ -5,18 +5,7 @@
 The Powdery Mildew Detection System for Cherry Leaves aims to develop an efficient and scalable solution for visually determining the presence of powdery mildew on cherry leaves. Powdery mildew is a common fungal infection that can have detrimental effects on cherry plantations, leading to stunted growth, yellowing leaves, and reduced yields if left untreated. 
 
 This project focuses on leveraging machine learning and image analysis techniques to differentiate healthy cherry leaves from those infected with powdery mildew. By automating the detection process, the system aims to save time and resources for farmers and ensure the delivery of high-quality cherry products to the market.
-## Deployment
 
-Heroku
-- The App live link is: https://otis-project-5.herokuapp.com/
-- Set the runtime.txt Python version to a Heroku-20 stack currently supported version.
-- The project was deployed to Heroku using the following steps.
-- Log in to Heroku and create an App
-- At the Deploy tab, select GitHub as the deployment method.
-- Select your repository name and click Search. Once it is found, click Connect.
-- Select the branch you want to deploy, then click Deploy Branch.
-- The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-- If the slug size is too large then add large files not required for the app to the .slugignore file.
 
 ## Business Requirements
 
@@ -75,6 +64,19 @@ The model development process involves several steps, including data preprocessi
 
 5. **Model Deployment**: Once the model is trained and evaluated, we will deploy it on the Heroku platform. This will involve creating a web application where users can upload cherry leaf images for prediction. The deployed model will make real-time predictions on the uploaded images and display the results to the user.
 ## Bugs
+
+## Deployment
+
+Heroku
+- The App live link is: https://otis-project-5.herokuapp.com/
+- Set the runtime.txt Python version to a Heroku-20 stack currently supported version.
+- The project was deployed to Heroku using the following steps.
+- Log in to Heroku and create an App
+- At the Deploy tab, select GitHub as the deployment method.
+- Select your repository name and click Search. Once it is found, click Connect.
+- Select the branch you want to deploy, then click Deploy Branch.
+- The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
+- If the slug size is too large then add large files not required for the app to the .slugignore file.
 ## Libraries used
 - numpy: I used NumPy for efficient numerical computations and array handling.
 
