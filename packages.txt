@@ -13,7 +13,8 @@ fonttools==4.39.4
 gast==0.4.0
 google-auth==2.18.1
 google-auth-oauthlib==1.0.0
-google-pasta==0.2.0
+google-pip uninstall -r requirements.txt -y
+sta==0.2.0
 grpcio==1.55.0
 h5py==3.8.0
 htmlmin==0.1.12
