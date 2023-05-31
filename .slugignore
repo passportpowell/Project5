@@ -3,6 +3,10 @@ inputs/datasets/cherry-leaves/test/healthy
 inputs/datasets/cherry-leaves/train/powdery_mildew/*
 inputs/datasets/cherry-leaves/test/healthy/*
 inputs/datasets/cherry-leaves/test/powdery_mildew/*
+inputs/datasets/cherry-leaves/healthy
+inputs/datasets/cherry-leaves/powdery_mildew
+inputs/datasets/cherry-leaves/healthy/
+inputs/datasets/cherry-leaves/powdery_mildew/
 readme_images/*
 README.md
 .gitpod.dockerfile

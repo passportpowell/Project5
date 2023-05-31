@@ -14,3 +14,12 @@ inputs/datasets/cherry-leaves/test/
 inputs/datasets/cherry-leaves/train/
 *zip
 cherry-leaves.zip
+inputs/datasets/cherry-leaves/train/healthy/*
+inputs/datasets/cherry-leaves/test/healthy
+inputs/datasets/cherry-leaves/train/powdery_mildew/*
+inputs/datasets/cherry-leaves/test/healthy/*
+inputs/datasets/cherry-leaves/test/powdery_mildew/*
+inputs/datasets/cherry-leaves/healthy
+inputs/datasets/cherry-leaves/powdery_mildew
+inputs/datasets/cherry-leaves/healthy/
+inputs/datasets/cherry-leaves/powdery_mildew/
