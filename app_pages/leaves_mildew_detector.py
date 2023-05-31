@@ -20,7 +20,7 @@ def leaves_mildew_detector_body():
 
     images_buffer = st.file_uploader('Upload leaf images below.', type=['jpg', 'jpeg', 'png', 'gif', 'bmp', 'tiff', 'svg', 'ico', 'jfif', 'webp'], accept_multiple_files=True)
     if images_buffer:
-        df_report = pd.DataFrame()
+        df_report = pd.DataFrame([])
         for image in images_buffer:
             img_pil = Image.open(image)
             st.info(f"Cherry leaf image: **{image.name}**")
