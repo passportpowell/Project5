@@ -9,3 +9,5 @@
 # cloudinary_python.txt
 # kaggle.json
 # inputs/datasets/cherry-leaves
+inputs/datasets/cherry-leaves/test
+inputs/datasets/cherry-leaves/train
