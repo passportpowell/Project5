@@ -17,6 +17,6 @@ seaborn
 plotly
 streamlit
 scikit-learn
-tensorflow-cpu
+tensorflow-lite
 keras
 pillow
