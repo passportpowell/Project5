@@ -19,4 +19,3 @@ streamlit
 scikit-learn
 tensorflow-cpu
 keras
-pil
