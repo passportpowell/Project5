@@ -21,7 +21,7 @@
 # keras
 # pillow
 
-numpy
+numpy==1.24.0
 pandas
 matplotlib
 seaborn
