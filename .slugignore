@@ -1,3 +1,6 @@
+inputs/
+inputs/*
+
 inputs/datasets/cherry-leaves/train/healthy/*
 inputs/datasets/cherry-leaves/train/healthy/
 inputs/datasets/cherry-leaves/train/powdery_mildew/
