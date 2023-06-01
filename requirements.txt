@@ -22,6 +22,8 @@
 # pillow
 
 numpy==1.24.0
+# numpy==1.24
+
 pandas
 matplotlib
 seaborn
