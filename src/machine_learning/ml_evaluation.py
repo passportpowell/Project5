@@ -11,6 +11,6 @@ import streamlit as st
 from src.dataframe_utils import load_pickle_file
 
 def load_evaluation_results(version):
-    results = load_pickle_file(f'/workspace/project5/outputs/v2/model training/evaluation/model_evaluation.pkl')
+    results = load_pickle_file(f'./outputs/v2/model training/evaluation/model_evaluation.pkl')
     print(results)
     return results
