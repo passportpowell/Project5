@@ -1,5 +1,8 @@
 # Powdery Mildew Detection System for Cherry Leaves
 
+https://cherry-leaves-detector.herokuapp.com/
+![Home page](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685702149/Project%205/page_0_xs57da.png)
+
 ## Project Description
 
 The Powdery Mildew Detection System for Cherry Leaves aims to develop an efficient and scalable solution for visually determining the presence of powdery mildew on cherry leaves. Powdery mildew is a common fungal infection that can have detrimental effects on cherry plantations, leading to stunted growth, yellowing leaves, and reduced yields if left untreated. 
@@ -48,13 +51,71 @@ The success metrics for our model are as follows:
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
 - The training data, sourced from Kaggle, comprises 2,104 healthy leaf images and 2,104 powdery mildew leaf images. The target variable is infection status.
 - The testing dataset contains 300 images, 150 each of healthy and infected leaves. This dataset will be used to evaluate the model's performance.
-## Dashboard Design
+
+
+# Dashboard Design
+# Dashboard Design (Streamlit App User Interface)
+
+## Page 1: Project Overview
+**Project Overview:**
+This project focuses on the detection of powdery mildew, a parasitic fungal disease caused by Podosphaera clandestina in cherry trees. The disease adversely affects the plant's growth and can result in significant crop loss. The primary objective is to develop a visual differentiation system for identifying infected and uninfected cherry leaves.
+![Home page](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685702149/Project%205/page_0_xs57da.png)
+
+**General Information:**
+Powdery mildew manifests as light-green, circular lesions on the leaf surface, which eventually develop into a white cotton-like growth. The dataset provided by Farmy & Foody consists of 4208 high-quality photos of single cherry leaves, categorized as either healthy or infested by powdery mildew.
+
+**Business Requirements:**
+- Visual differentiation between infected and uninfected leaves.
+- Detection of powdery mildew presence in a given leaf.
+- Generation of comprehensive prediction reports for examined leaves.
+
+For additional information about the project, please refer to the [Readme.md file](link-to-readme).
+
+## Page 2: Leaves Visualizer
+This page addresses the first business requirement.
+![Page 2](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_2_czp5oa.png)
+
+- Checkbox 1: Visualization of the difference between average and variability images.
+- Checkbox 2: Comparison of average parasitized and average uninfected leaves.
+- Checkbox 3: Display of an image montage.
+
+For more details, please consult the [Readme.md file](link-to-readme).
+
+## Page 3: Powdery Mildew Detector
+This page addresses the second and third business requirements. It allows users to determine whether a given leaf is infected and provides a downloadable report.
+![Page 3](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_3_ljexqt.png)
+
+- Users can upload multiple cherry leaf images using the file uploader widget.
+- The interface displays the uploaded image, a barplot representing the prediction, and a statement indicating whether the leaf is infected with powdery mildew or not, along with the associated probability.
+- The table presents the image name and prediction results.
+- Users can download the report in CSV format.
+
+To download a set of parasite-contained and uninfected leaf images for live prediction on Kaggle, please visit [Kaggle](kaggle-link).
+For further information, please refer to the [Readme.md file](link-to-readme).
+
+## Page 4: Project Hypothesis and Validation
+This page provides detailed blocks for each project hypothesis, including statements, explanations, validation processes, and conclusive findings. Please review the Hypothesis and Validation section in the [Readme.md file](link-to-readme).
+![Page 4](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_4_akaosh.png)
+
+## Page 5: ML Performance Metrics
+This page presents various ML performance metrics:
+![Page 5](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_5_1_zrkiom.png)
+![Page 5](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_5_2_i1or1e.png)
+- Label frequencies for the train, validation, and test sets.
+- Percentage distribution of the dataset across the three sets.
+- Model performance depicted by the ROC curve.
+- Model accuracy displayed through the confusion matrix.
+- Model history showing accuracy and losses of the LSTM model.
+- Model evaluation results on the test set.
+
+For more comprehensive insights, please visit the [Readme.md file](link-to-readme).
 
 ### Model Development
 
 The model development process involves several steps, including data preprocessing, model selection, training, and evaluation. Here is an overview of the steps involved:
 
 1. **Data Preprocessing**: The raw image data needs to be preprocessed before feeding it into the model. This includes tasks such as resizing the images, normalizing pixel values, and splitting the dataset into training and testing sets.
+
 
 2. **Model Selection**: We will explore various machine learning models suitable for image classification tasks. Some potential models include Convolutional Neural Networks (CNNs) such as VGG, ResNet, or MobileNet. The choice of the model will be based on its performance and suitability for our specific task.
 
@@ -63,7 +124,9 @@ The model development process involves several steps, including data preprocessi
 4. **Model Evaluation**: After training, we will evaluate the model's performance using the testing dataset. The evaluation metrics will include accuracy, precision, recall, and F1-score. We will also visualize the model's predictions and analyze any misclassifications.
 
 5. **Model Deployment**: Once the model is trained and evaluated, we will deploy it on the Heroku platform. This will involve creating a web application where users can upload cherry leaf images for prediction. The deployed model will make real-time predictions on the uploaded images and display the results to the user.
+
 ## Bugs
+Bugs were documented in the [Project Dashboard](https://github.com/users/passportpowell/projects/6/views/1?layout=table)
 
 ## Deployment
 
@@ -77,6 +140,7 @@ Heroku
 - Select the branch you want to deploy, then click Deploy Branch.
 - The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 - If the slug size is too large then add large files not required for the app to the .slugignore file.
+
 ## Libraries used
 - numpy: I used NumPy for efficient numerical computations and array handling.
 
@@ -103,6 +167,7 @@ Heroku
 - xgboost: I employed xgboost, a popular gradient boosting library, for training boosted tree models and achieving better predictive performance.
 
 These libraries provided me with powerful tools and functionalities to efficiently analyze data, create visualizations, build machine learning models, and deploy interactive applications.
+
 ## Acknowledgements
 
 
