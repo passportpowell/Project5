@@ -1,6 +1,7 @@
 # Powdery Mildew Detection System for Cherry Leaves
 
-https://cherry-leaves-detector.herokuapp.com/
+https://otis-project-5.herokuapp.com/
+
 ![Home page](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685702149/Project%205/page_0_xs57da.png)
 
 ## Project Description
@@ -15,6 +16,7 @@ This project focuses on leveraging machine learning and image analysis technique
 - 1 The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one that contains powdery mildew.
 
 - 2 The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+
 ## Business Case
 
 - We aim to develop a machine learning model that can accurately predict whether a cherry leaf contains powdery mildew based on historical image data. This supervised classification model will have two classes: "Powdery Mildew" and "Healthy."
@@ -26,6 +28,7 @@ The success metrics for our model are as follows:
 - Accuracy: We aim to achieve an accuracy of 95% or higher on the test set. This ensures that the model's predictions align with the ground truth labels and can be relied upon for accurate identification of powdery mildew.
 
 - The model output will be a binary flag indicating whether the leaf contains any features indicative of powdery mildew. The staff at the plantation will capture images of cherry leaves and upload them to the application, where the model will make predictions in real-time.
+
 ## Methodology, Hypothesis & Validation
 
 - The current manual verification process involves visually inspecting leaf samples to determine powdery mildew infection, taking approximately 30 minutes per tree. Application of a specific compound to eliminate the fungus adds an extra minute. This manual process is time-consuming and lacks scalability across thousands of cherry trees.
@@ -61,7 +64,6 @@ The success metrics for our model are as follows:
 This project focuses on the detection of powdery mildew, a parasitic fungal disease caused by Podosphaera clandestina in cherry trees. The disease adversely affects the plant's growth and can result in significant crop loss. The primary objective is to develop a visual differentiation system for identifying infected and uninfected cherry leaves.
 ![Home page](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685702149/Project%205/page_0_xs57da.png)
 
-**General Information:**
 Powdery mildew manifests as light-green, circular lesions on the leaf surface, which eventually develop into a white cotton-like growth. The dataset provided by Farmy & Foody consists of 4208 high-quality photos of single cherry leaves, categorized as either healthy or infested by powdery mildew.
 
 **Business Requirements:**
@@ -69,32 +71,30 @@ Powdery mildew manifests as light-green, circular lesions on the leaf surface, w
 - Detection of powdery mildew presence in a given leaf.
 - Generation of comprehensive prediction reports for examined leaves.
 
-For additional information about the project, please refer to the [Readme.md file](link-to-readme).
 
 ## Page 2: Leaves Visualizer
-This page addresses the first business requirement.
+This page is for addressing the first business requirement.
 ![Page 2](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_2_czp5oa.png)
 
-- Checkbox 1: Visualization of the difference between average and variability images.
-- Checkbox 2: Comparison of average parasitized and average uninfected leaves.
-- Checkbox 3: Display of an image montage.
-
-For more details, please consult the [Readme.md file](link-to-readme).
+- expander 1: Visualization of the difference between average and variability images.
+- expander 2: Comparising  average parasitized and average healthy leaves.
+- expander 3: Displaying an image gallery.
 
 ## Page 3: Powdery Mildew Detector
-This page addresses the second and third business requirements. It allows users to determine whether a given leaf is infected and provides a downloadable report.
+This page addresses the second and third business requirements. It allows users to determine whether a given leaf is infected..
+
 ![Page 3](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_3_ljexqt.png)
 
 - Users can upload multiple cherry leaf images using the file uploader widget.
 - The interface displays the uploaded image, a barplot representing the prediction, and a statement indicating whether the leaf is infected with powdery mildew or not, along with the associated probability.
 - The table presents the image name and prediction results.
-- Users can download the report in CSV format.
 
-To download a set of parasite-contained and uninfected leaf images for live prediction on Kaggle, please visit [Kaggle](kaggle-link).
-For further information, please refer to the [Readme.md file](link-to-readme).
+To download a set of parasite-contained and uninfected leaf images for live prediction on Kaggle, please visit [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves).
+
 
 ## Page 4: Project Hypothesis and Validation
-This page provides detailed blocks for each project hypothesis, including statements, explanations, validation processes, and conclusive findings. Please review the Hypothesis and Validation section in the [Readme.md file](link-to-readme).
+Describes the validation approach, which involves using the detection tool on a sample of cherry leaves suspected of infection.
+
 ![Page 4](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_4_akaosh.png)
 
 ## Page 5: ML Performance Metrics
@@ -107,8 +107,6 @@ This page presents various ML performance metrics:
 - Model accuracy displayed through the confusion matrix.
 - Model history showing accuracy and losses of the LSTM model.
 - Model evaluation results on the test set.
-
-For more comprehensive insights, please visit the [Readme.md file](link-to-readme).
 
 ### Model Development
 
@@ -162,23 +160,13 @@ Heroku
 
 - pandas-profiling: I used pandas-profiling to automatically generate detailed exploratory data analysis reports for my data.
 
-- imbalanced-learn: I utilized imbalanced-learn for handling imbalanced datasets and implementing techniques for handling class imbalance in classification problems.
-
-- xgboost: I employed xgboost, a popular gradient boosting library, for training boosted tree models and achieving better predictive performance.
-
 These libraries provided me with powerful tools and functionalities to efficiently analyze data, create visualizations, build machine learning models, and deploy interactive applications.
 
 ## Acknowledgements
 
 
-- Code and dashboard design: The initial code and design of the dashboard were adapted from the walkthrough project "Malaria Detector" of the Code Institute course, with minor modifications made to deepen my understanding of machine learning and data science. The original repository can be found at https://github.com/1.
+- Code and dashboard design: The initial code and design of the dashboard were adapted from the walkthrough project "Malaria Detector" of the Code Institute course, with changes.
 
-- Garden Tech webpage: Valuable information about powdery mildew was obtained from the Garden Tech webpage, which enhanced my knowledge of the topic and influenced the project.
-
-- Streamlit: The Streamlit website provided resources and a custom theme feature, allowing me to create an appealing and user-friendly dashboard interface.
-
-- Code Institute resources: The Code Institute recommended template served as the starting point for the project, incorporating the fictional company and its requirements. The repository for the template can be found at https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves. The Code Institute project handbook provided additional information and guidance.
-
-- Matplotlib documentation: The Matplotlib documentation was referenced for creating pie charts.
+- Code Institute resources: The Code Institute recommended template served as the starting point for the project. The template can be found at https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves. The Code Institute project handbook provided additional information and guidance.
 
 - Mentor: Rohit Sharma.
