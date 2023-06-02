@@ -35,3 +35,4 @@ scikit-learn
 tensorflow-cpu
 keras
 protobuf
+joblib
