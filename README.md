@@ -51,8 +51,8 @@ The success metrics for our model are as follows:
 
 ## Dataset
 
-- The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then created a fictitious user story where predictive analytics can be applied in a real project in the workplace.
-- The training data, sourced from Kaggle, comprises 2,104 healthy leaf images and 2,104 powdery mildew leaf images. The target variable is infection status.
+- The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then used the user story where predictive analytics can be applied in a real project in the workplace.
+- The training data, sourced from Kaggle, comprises 2,104 healthy leaf images and 2,104 powdery mildew leaf images.
 - The testing dataset contains 300 images, 150 each of healthy and infected leaves. This dataset will be used to evaluate the model's performance.
 
 
