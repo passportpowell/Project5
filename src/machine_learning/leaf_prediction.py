@@ -38,7 +38,7 @@ def plot_predictions_probabilities(pred_proba, pred_class):
     )
     st.plotly_chart(fig)
 
-#--------------------------------------------
+
 def resize_input_image(img, version):
     images_shapes = load_pickle_file(f"outputs/{version}/images_shapes.pkl")
     img_resized = img.resize((images_shapes[1], images_shapes[0]), Image.ANTIALIAS)
@@ -46,7 +46,6 @@ def resize_input_image(img, version):
 
     return my_image
 
-#--------------------------------------------
 def load_model_and_predict(my_image, version):
     model = load_model(f"outputs/{version}/model training/cherry_mildew_model.h5")
 
@@ -63,4 +62,3 @@ def load_model_and_predict(my_image, version):
     )
 
     return pred_proba, pred_class
-#------------------------------

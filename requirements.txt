@@ -1,28 +1,4 @@
-# numpy
-# matplotlib
-# seaborn
-# plotly
-# streamlit
-# scikit-learn
-# tensorflow-cpu
-# keras
-# protobuf
-# pandas
-# pandas-profiling
-
-# numpy
-# pandas
-# matplotlib
-# seaborn
-# plotly
-# streamlit
-# scikit-learn
-# tensorflow-lite
-# keras
-# pillow
-
 numpy==1.24.0
-# numpy==1.24
 
 pandas
 matplotlib
