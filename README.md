@@ -99,10 +99,8 @@ This page presents various ML performance metrics:
 ![Page 5](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_5_2_i1or1e.png)
 - Label frequencies for the train, validation, and test sets.
 - Percentage distribution of the dataset across the three sets.
-- Model performance depicted by the ROC curve.
 - Model accuracy displayed through the confusion matrix.
-- Model history showing accuracy and losses of the LSTM model.
-- Model evaluation results on the test set.
+- Model history showing accuracy and losses of the model.
 
 ### Model Development
 
