@@ -1,6 +1,6 @@
 # Powdery Mildew Detection System for Cherry Leaves
 
-https://otis-project-5.herokuapp.com/
+https://otis-project-5.herokuapp.com/ (Refresh the page if you receive an error.)
 
 ![Home page](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685702149/Project%205/page_0_xs57da.png)
 
@@ -52,15 +52,11 @@ The success metrics for our model are as follows:
 ## Dataset
 
 - The dataset is sourced from [Kaggle](https://www.kaggle.com/codeinstitute/cherry-leaves). We then used the user story where predictive analytics can be applied in a real project in the workplace.
-- The training data, sourced from Kaggle, comprises 2,104 healthy leaf images and 2,104 powdery mildew leaf images.
-- The testing dataset contains 300 images, 150 each of healthy and infected leaves. This dataset will be used to evaluate the model's performance.
 
 
-# Dashboard Design
 # Dashboard Design (Streamlit App User Interface)
 
 ## Page 1: Project Overview
-**Project Overview:**
 This project focuses on the detection of powdery mildew, a parasitic fungal disease caused by Podosphaera clandestina in cherry trees. The disease adversely affects the plant's growth and can result in significant crop loss. The primary objective is to develop a visual differentiation system for identifying infected and uninfected cherry leaves.
 ![Home page](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685702149/Project%205/page_0_xs57da.png)
 
@@ -81,7 +77,7 @@ This page is for addressing the first business requirement.
 - expander 3: Displaying an image gallery.
 
 ## Page 3: Powdery Mildew Detector
-This page addresses the second and third business requirements. It allows users to determine whether a given leaf is infected..
+This page addresses the second requirement. It allows users to determine whether a given leaf is infected or not.
 
 ![Page 3](https://res.cloudinary.com/dbqkng7cd/image/upload/v1685699850/Project%205/page_3_ljexqt.png)
 
@@ -129,7 +125,7 @@ Bugs were documented in the [Project Dashboard](https://github.com/users/passpor
 ## Deployment
 
 Heroku
-- The App live link is: https://otis-project-5.herokuapp.com/
+- The App live link is: https://otis-project-5.herokuapp.com/ (Refresh the page if you receive an error.)
 - Set the runtime.txt Python version to a Heroku-20 stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 - Log in to Heroku and create an App
@@ -167,6 +163,8 @@ These libraries provided me with powerful tools and functionalities to efficient
 
 - Code and dashboard design: The initial code and design of the dashboard were adapted from the walkthrough project "Malaria Detector" of the Code Institute course, with changes.
 
-- Code Institute resources: The Code Institute recommended template served as the starting point for the project. The template can be found at https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves. The Code Institute project handbook provided additional information and guidance.
+- Code Institute resources: 
+    - The Code Institute recommended template served as the starting point for the project. The template can be found at https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves. The Code Institute project handbook provided additional information and guidance.
+    - Code institue Slack Group.
 
 - Mentor: Rohit Sharma.
