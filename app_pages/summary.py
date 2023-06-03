@@ -32,6 +32,3 @@ def summary_body():
     """
 
     st.write(summary_text)
-
-
-#---------------------------------------

@@ -22,4 +22,3 @@ def hypothesis_body():
         "absence of the characteristic white growth. We will compare the tool's classifications with visual inspections and expert assessments to determine "
         "its accuracy in differentiating between healthy and affected leaves."
     )
-    #------------------------------
